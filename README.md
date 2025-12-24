@@ -7,9 +7,35 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm create vite@latest my-react-app
+cd my-react-app
+npm install
+```
+
+## Development
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+```
+
+This will start the development server on `http://localhost:5173`. Open the `index.html` file to test your app.
+
+## Build
+
+Before creating a production build, we recommend running the development build first:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+## React Compiler
 
 ## Expanding the ESLint configuration
 
