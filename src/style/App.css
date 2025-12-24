@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background-color: #f4f6fb;
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #3f51b5;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.task-section {
+  flex: 3;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.task-section h2 {
+  margin-bottom: 15px;
+  color: #3f51b5;
+}
+
+.task {
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f1f3f9;
+  border-radius: 6px;
+}
+
+.create-section {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.create-section h2 {
+  margin-bottom: 15px;
+  color: #3f51b5;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3f51b5;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2c3a9f;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 3px 8px;
+  font-size: 17px;
+  border: none;
+  background-color: transparent;
+  color: #3f51b5;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.task-item {
+  position: relative;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: #f1f3f9;
+  border-left: 5px solid #3f51b5;
+  border-radius: 6px;
+}
+
+.task-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.task-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.update-btn {
+  color: #3f51b5;
+}
+
+.update-btn:hover {
+  background-color: rgba(63, 81, 181, 0.1);
+}
+
+.delete-btn {
+  color: #e53935;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(229, 57, 53, 0.1);
+}
+
+.task-title {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #333;
+}
+
+.task-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  color: #555;
+}
